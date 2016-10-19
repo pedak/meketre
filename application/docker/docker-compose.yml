@@ -1,0 +1,12 @@
+refbase:
+  build: refbase
+  links:
+    - db
+  ports:
+    - "80:80"
+
+db:
+  build: mysql
+  ports:
+    - "3306:3306"
+
